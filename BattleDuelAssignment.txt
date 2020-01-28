@@ -6,4 +6,8 @@ The hero then duels an opponent until either the hero or opponent is defeated
 If the hero beats the opponent the game ends in victory
 If the hero's health falls below 0 the game ends in failure
 
+The game is non-deterministic.  They must use some method like Math.Random() to make it so that the game does not play exactly the same each time. 
+You must have an abstract class Combatant with an abstract method attack(Combatant combatant) that child classes must use
+You should use an interface to add an ability a child class can use in combat
+
 bonus: the hero battles a group of enemies
